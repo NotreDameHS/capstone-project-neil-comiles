@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://cke115qa4yhc3"]
+
+[ext_resource type="Texture2D" uid="uid://fsx87dlaej5j" path="res://assets/textures/space.png" id="1_l3thc"]
+
+[node name="Sprite2D" type="Sprite2D" unique_id=590008658]
+texture_repeat = 2
+texture = ExtResource("1_l3thc")
+region_enabled = true
+region_rect = Rect2(0, 0, 10000, 10000)

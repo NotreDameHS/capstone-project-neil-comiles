@@ -1,0 +1,25 @@
+extends Sprite2D
+
+var velocity := Vector2.ZERO
+var max_speed := 600.0
+var steering_factor := 10.0
+
+func _process(delta: float) -> void:
+	
+	var direction := Vector2.ZERO
+	
+	direction.x = Input.get_axis("move_left", "move_right")
+	direction.y = Input.get_axis("move_up", "move_down")
+	
+	if direction.length() > 1.0:
+		direction = direction.normalized()
+	
+	var desired_velocity := direction * max_speed
+	var steering_vector := desired_velocity - velocity
+	
+	velocity += steering_factor * steering_vector * delta
+	
+	position += velocity * delta
+	
+	if velocity.length() > 0.0:
+		rotation = lerp_angle(rotation, velocity.angle(), 10.0 * delta)

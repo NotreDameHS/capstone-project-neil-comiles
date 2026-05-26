@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://btt8b2lhnno6e"]
+
+[ext_resource type="PackedScene" uid="uid://e42t5d6uwgs" path="res://entities/player/character.tscn" id="1_u52ul"]
+[ext_resource type="PackedScene" uid="uid://cmvs8tqlohgj2" path="res://cursor.tscn" id="2_oi3di"]
+[ext_resource type="PackedScene" uid="uid://cke115qa4yhc3" path="res://Background.tscn" id="2_vonw3"]
+
+[node name="Test_Level" type="Node2D" unique_id=1447758600]
+
+[node name="Background" parent="." unique_id=590008658 instance=ExtResource("2_vonw3")]
+
+[node name="Character" parent="." unique_id=1319729798 instance=ExtResource("1_u52ul")]
+
+[node name="CursorLayer" type="CanvasLayer" parent="." unique_id=2072223784]
+
+[node name="Cursor" parent="CursorLayer" unique_id=1523785808 instance=ExtResource("2_oi3di")]
+scale = Vector2(3, 3)
