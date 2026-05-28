@@ -1,12 +1,12 @@
 extends Sprite2D
 
-var velocity := Vector2.ZERO
+var velocity := Vector2(0,0)
 var max_speed := 600.0
 var steering_factor := 10.0
 
 func _process(delta: float) -> void:
 	
-	var direction := Vector2.ZERO
+	var direction := Vector2(0,0)
 	
 	direction.x = Input.get_axis("move_left", "move_right")
 	direction.y = Input.get_axis("move_up", "move_down")

@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://b2bkvpcxhcopu"]
+
+[ext_resource type="Texture2D" uid="uid://bgdcjf24q8b86" path="res://panel-border-000.png" id="1_v2lfg"]
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=794214671]
+
+[node name="Control" type="Control" parent="." unique_id=1404518304]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="NinePatchRect" type="NinePatchRect" parent="Control" unique_id=1761762206]
+texture_filter = 1
+layout_mode = 0
+offset_right = 502.0
+offset_bottom = 40.0
+texture = ExtResource("1_v2lfg")
+region_rect = Rect2(0, 0, 600, 48)
+
+[node name="Label" type="Label" parent="Control/NinePatchRect" unique_id=377715794]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="NinePatchRect2" type="NinePatchRect" parent="Control" unique_id=151334495]
+texture_filter = 1
+layout_mode = 0
+offset_left = 501.0
+offset_right = 541.0
+offset_bottom = 40.0
+texture = ExtResource("1_v2lfg")
+
+[node name="ColorRect" type="ColorRect" parent="Control" unique_id=522981386]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 5.0
+offset_right = 540.0
+offset_bottom = 35.0
+color = Color(1, 1, 1, 0.20784314)
